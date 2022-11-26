@@ -1,0 +1,45 @@
+imgdata/load source1points.imgdata
+imgdata/list/add 1764.117 869.423 yes
+	6
+	end
+
+imgdata/load source1detailednull.imgdata
+imgdata/list/add 1764.117 869.423
+
+imgdata/load source1detailedcritgrid.imgdata
+imgdata/list/add 1764.117 869.423
+
+imgdata/load source2detailedpoints.imgdata
+imgdata/list/add 1563.643 998.986 yes
+	6
+	end
+
+imgdata/load source2detailednull.imgdata
+imgdata/list/add 1563.643 998.986
+
+imgdata/load source2detailedcritgrid.imgdata
+imgdata/list/add 1563.643 998.986
+
+imgdata/load source3detailedpoints.imgdata
+imgdata/list/add 1655.210 1001.175 yes
+	7
+	end
+
+imgdata/load source3detailednull.imgdata
+imgdata/list/add 1655.210 1001.175
+
+imgdata/load source3detailedcritgrid.imgdata
+imgdata/list/add 1655.210 1001.175
+
+lens/load inv5.lensdata
+
+grid/new/uniform 0 5 35 64
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * no * yes yes 0.5e13
+lens/save inv5corrections.lensdata
+
+lens/new/composite 
+	0 0 0 1 inv5.lensdata
+	0 0 0 1 inv5corrections.lensdata
+	end
+lens/save inv5corrected.lensdata
+

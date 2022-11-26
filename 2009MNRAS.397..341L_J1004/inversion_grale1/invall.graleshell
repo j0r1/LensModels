@@ -1,0 +1,67 @@
+imgdata/load source1points.imgdata
+
+# The number is a sum of the following contributions:
+#   1: use surrounding rectangles in extended overlap fitness
+#   2: use indicated point groups in extended overlap fitness (surrounding
+#      rectangles are still used as a scale)
+#   4: a grid to calculate 
+
+# So, the '6' means use points only (the quasar position) for overlap, as
+# well as a penalty based on a caustic grid
+imgdata/list/add 1764.117 869.423 yes
+	6
+	end
+
+imgdata/load source1null.imgdata
+imgdata/list/add 1764.117 869.423
+
+imgdata/load source1critgrid.imgdata
+imgdata/list/add 1764.117 869.423
+
+imgdata/load source2points.imgdata
+imgdata/list/add 1563.643 998.986 yes
+	5
+	end
+
+imgdata/load source2null.imgdata
+imgdata/list/add 1563.643 998.986
+
+imgdata/load source2critgrid.imgdata
+imgdata/list/add 1563.643 998.986
+
+imgdata/load source3points.imgdata
+imgdata/list/add 1655.210 1001.175 yes
+	5
+	end
+
+imgdata/load source3null.imgdata
+imgdata/list/add 1655.210 1001.175
+
+imgdata/load source3critgrid.imgdata
+imgdata/list/add 1655.210 1001.175
+
+invert/gaparams/set 2
+grid/new/uniform 0 5 35 17
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * * * * * * genome
+lens/save inv1.lensdata
+
+invert/gaparams/set 2
+grid/new/lens 0 5 35 300 400
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * * * * * * genome
+lens/save inv2.lensdata
+
+invert/gaparams/set 2
+grid/new/lens 0 5 35 500 600
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * * * * * * genome
+lens/save inv3.lensdata
+
+invert/gaparams/set 2
+grid/new/lens 0 5 35 700 800
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * * * * * * genome
+lens/save inv4.lensdata
+ 
+invert/gaparams/set 2
+grid/new/lens 0 5 35 900 1000
+invert/grid/mpi 1456.008 0.68 j1004 1024 * * * * * * * genome
+lens/save inv5.lensdata
+
