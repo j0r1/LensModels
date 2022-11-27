@@ -1,0 +1,83 @@
+{
+    "state": {
+        "activelayerindex": -1,
+        "globalsettings": {
+            "axisleft": true,
+            "ispointsizefixed": true,
+            "nextmatchpointfits": 10,
+            "nextmatchpointrgb": 13,
+            "pointsizearcsecsize": 0.1,
+            "pointsizepixelsize": 4,
+            "showaxes": false,
+            "showmatchpoints": true
+        },
+        "layers": [
+            {
+                "name": "RGB file: 1567220522934-heic0606b.png",
+                "points": [
+                    {
+                        "label": "2",
+                        "xy": [
+                            3470.1097452086233,
+                            1604.429979619256
+                        ]
+                    },
+                    {
+                        "label": "0",
+                        "xy": [
+                            386.36383637564995,
+                            1134.6894937861634
+                        ]
+                    },
+                    {
+                        "label": "1",
+                        "xy": [
+                            3035.1759207374757,
+                            185.79009723700392
+                        ]
+                    }
+                ],
+                "rgbfile": "/home/jori/projects/J1004/1567220522934-heic0606b.png",
+                "transform": [
+                    -1.0261079395557776e-05,
+                    0.04999444648275293,
+                    0.0,
+                    -0.05003213964245063,
+                    -5.747984433618744e-05,
+                    0.0,
+                    55.55867185845171,
+                    -88.14279665535301,
+                    1.0
+                ]
+            },
+            {
+                "name": "RGB file: j1004sources.png",
+                "points": [],
+                "rgbfile": "/home/jori/projects/J1004/j1004sources.png",
+                "transform": [
+                    -0.049964780166445906,
+                    6.895244693279953e-05,
+                    0.0,
+                    3.6724431702495674e-05,
+                    -0.049921685122667016,
+                    0.0,
+                    15.500945474627637,
+                    18.490974675697725,
+                    1.0
+                ]
+            }
+        ],
+        "visibilities": [
+            true,
+            true,
+            true
+        ]
+    },
+    "view": {
+        "center": [
+            2.3422912126804416,
+            2.0329319959113263
+        ],
+        "zoom": 22.627416997969494
+    }
+}
